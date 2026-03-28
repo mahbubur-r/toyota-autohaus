@@ -6,7 +6,7 @@ import CarLeasing from './Home/CarLeasing';
 import Hero from './Home/Hero';
 const Home = () => {
     return (
-        <div className='border-5 border-green-500'>
+        <div className=''>
             <Hero></Hero>
             <VehicleTypes></VehicleTypes>
             <Features></Features>

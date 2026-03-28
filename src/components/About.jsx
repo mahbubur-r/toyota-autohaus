@@ -1,13 +1,14 @@
 import React from 'react';
+import AboutHero from './About/AboutHero';
+import ServiceCenters from './About/ServiceCenters';
+import Contact from './About/Contact';
 
 const About = () => {
     return (
         <div className='border-2 border-red-500 '>
-            <div className='bg-white text-center'>
-                <h3 className='text-4xl text-red-600 font-bold'>About</h3>
-                <h1 className='text-7xl text-black font-bold mt-10'>Location for Toyota Autohaus</h1>
-
-            </div>
+            <AboutHero></AboutHero>
+            <ServiceCenters></ServiceCenters>
+            <Contact></Contact>
         </div>
     );
 };
