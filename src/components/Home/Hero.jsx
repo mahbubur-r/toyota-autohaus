@@ -6,7 +6,7 @@ import user3 from "../../assets/user3.jpg";
 
 const Hero = () => {
     return (
-        <section className="py-24 relative overflow-hidden bg-gradient-to-r from-[#f3f3f5] via-[#f8f2f2] to-[#f3f3f5]">
+        <section className="py-24 relative overflow-hidden bg-gradient-to-r from-[#f3f3f5] via-[#f8f2f2] to-[#f3f3f5]">--
             <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-12 relative z-10">
 
                 {/* LEFT */}

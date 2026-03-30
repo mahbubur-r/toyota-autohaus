@@ -4,3 +4,26 @@
 .input {
   @apply w-full border border-gray-300 px-4 py-3 outline-none bg-transparent text-sm;
 }
+.input {
+  @apply w-full border border-gray-300 px-3 py-2 text-sm outline-none bg-transparent;
+}
+
+.input {
+  @apply w-full border border-gray-300 px-3 py-2 text-sm outline-none bg-white;
+}
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  font-size: 0px;
+}

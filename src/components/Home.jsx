@@ -2,8 +2,8 @@ import React from 'react';
 import VehicleTypes from './Home/VehicleTypes';
 import Features from './Home/Features';
 import NewCar from './Home/NewCar';
-import CarLeasing from './Home/CarLeasing';
 import Hero from './Home/Hero';
+import CarLeasingBanner from './Home/CarLeasingBanner';
 const Home = () => {
     return (
         <div className=''>
@@ -11,7 +11,7 @@ const Home = () => {
             <VehicleTypes></VehicleTypes>
             <Features></Features>
             <NewCar></NewCar>
-            <CarLeasing></CarLeasing>
+            <CarLeasingBanner></CarLeasingBanner>
         </div>
     );
 };
