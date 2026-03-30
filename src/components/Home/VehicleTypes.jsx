@@ -7,11 +7,11 @@ import car5 from '../../assets/car5.png';
 import car6 from '../../assets/car6.png';
 import car7 from '../../assets/car7.png';
 import car8 from '../../assets/car8.png';
-import { useNavigate } from 'react-router';
+import { Link } from 'react-router';
 
 
 const VehicleTypes = () => {
-    const navigate = useNavigate();
+
     return (
         <section class="py-16 bg-white text-black">
             <div class="max-w-7xl mx-auto px-6">
@@ -34,10 +34,10 @@ const VehicleTypes = () => {
                     <div class="text-center border-r border-gray-300 pr-6">
                         <h3 class="font-semibold text-lg mb-4">Aygo X</h3>
                         <img src={car1} class="mx-auto mb-4" />
-                        <button onClick={() => navigate('/car-details')} class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
+                        <Link to="/car-details" class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
                             CAR DETAILS
                             <span class="border rounded-full p-1">↗</span>
-                        </button>
+                        </Link>
                     </div>
 
                     <div class="text-center border-r border-gray-300 pr-6">
