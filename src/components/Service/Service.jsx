@@ -3,6 +3,7 @@ import ServiceHero from './ServiceHero';
 import ServiceSection from './ServiceSection';
 import CarLeasingBanner from '../Home/CarLeasingBanner';
 import PrecisionSection from './PrecisionSection';
+import MapSection from './MapSection';
 
 
 const Service = () => {
@@ -12,6 +13,7 @@ const Service = () => {
            <ServiceSection></ServiceSection>
            <PrecisionSection></PrecisionSection>
            <CarLeasingBanner></CarLeasingBanner>
+           <MapSection></MapSection>
             
         </div>
     );

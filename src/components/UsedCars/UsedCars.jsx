@@ -1,9 +1,14 @@
 import React from 'react';
+import UsedCarBanner from './UsedCarBanner';
+import UsedCarsList from './UsedCarsList';
+import CarLeasingBanner from '../Home/CarLeasingBanner';
 
 const UsedCars = () => {
     return (
         <div>
-            <p className='text-2xl text-center'>Used Cars Page</p>
+            <UsedCarBanner></UsedCarBanner>
+            <UsedCarsList></UsedCarsList>
+            <CarLeasingBanner></CarLeasingBanner>
         </div>
     );
 };
