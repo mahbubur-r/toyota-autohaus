@@ -40,7 +40,7 @@ const Footer = () => {
                 <div class="flex flex-col justify-between">
 
 
-                    <div class="grid grid-cols-3 gap-10">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
 
 
                         <div>
@@ -79,7 +79,7 @@ const Footer = () => {
                     </div>
 
 
-                    <div class="flex items-center justify-between mt-12">
+                    <div class="flex flex-col sm:flex-row items-center justify-between mt-12 gap-4 text-center sm:text-left">
                         <p class="text-gray-500 text-sm">
                             Copyright © 2025 dummy. All rights reserved.
                         </p>

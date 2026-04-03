@@ -22,7 +22,7 @@ const Contact = () => {
           <form className="space-y-5">
 
             {/* Row 1 */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input type="text" placeholder="Company" className="input" />
               <select className="input">
                 <option>Select</option>
@@ -30,19 +30,19 @@ const Contact = () => {
             </div>
 
             {/* Row 2 */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input type="text" placeholder="First name" className="input" />
               <input type="text" placeholder="Last name" className="input" />
             </div>
 
             {/* Row 3 */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input type="text" placeholder="Street" className="input" />
               <input type="text" placeholder="ZIP / City" className="input" />
             </div>
 
             {/* Row 4 */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input type="text" placeholder="Phone number" className="input" />
               <input type="email" placeholder="e-mail address" className="input" />
             </div>

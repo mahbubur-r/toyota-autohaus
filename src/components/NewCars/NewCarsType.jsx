@@ -32,8 +32,8 @@ const cars = [
   },
 ];
 const NewCarsType = () => {
-    return (
-       <section className="bg-[#f5f5f5] py-16">
+  return (
+    <section className="bg-[#f5f5f5] py-16">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* 🔹 FILTER BAR */}
@@ -86,12 +86,12 @@ const NewCarsType = () => {
               </span>
 
               {/* TITLE */}
-              <h3 className="font-semibold text-lg mb-3">
+              <h3 className="font-semibold text-lg mb-3 text-black">
                 {carData.name}
               </h3>
 
               {/* SPECS */}
-              <div className="grid grid-cols-2 gap-y-2 text-sm text-gray-600 mb-4">
+              <div className="grid grid-cols-2 gap-y-2 text-sm text-gray-600 mb-4 ">
                 <span>Engine:</span><span>{carData.engine}</span>
                 <span>Fuel Efficiency:</span><span>{carData.fuel}</span>
                 <span>Gearbox:</span><span>Automatic</span>
@@ -100,7 +100,7 @@ const NewCarsType = () => {
 
               {/* FEATURES */}
               <div className="mb-4">
-                <p className="font-semibold text-sm mb-2">Key Features</p>
+                <p className="font-semibold text-sm mb-2 text-black">Key Features</p>
                 <div className="grid grid-cols-2 gap-2 text-xs text-gray-500">
                   <span>Android Auto</span>
                   <span>Apple CarPlay</span>
@@ -114,7 +114,7 @@ const NewCarsType = () => {
               {/* PRICE */}
               <div className="flex justify-between items-center mb-4">
                 <span className="text-sm text-gray-500">Smart Price</span>
-                <span className="font-bold text-lg">{carData.price}</span>
+                <span className="font-bold text-lg text-black">{carData.price}</span>
               </div>
 
               {/* BUTTON */}
@@ -129,7 +129,7 @@ const NewCarsType = () => {
 
       </div>
     </section>
-    );
+  );
 };
 
 export default NewCarsType;

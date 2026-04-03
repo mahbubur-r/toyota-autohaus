@@ -28,10 +28,9 @@ const VehicleTypes = () => {
                 </div>
 
 
-                <div class="grid md:grid-cols-4 gap-10">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
 
-
-                    <div class="text-center border-r border-gray-300 pr-6">
+                    <div class="text-center md:border-r border-gray-300 md:pr-6">
                         <h3 class="font-semibold text-lg mb-4">Aygo X</h3>
                         <img src={car1} class="mx-auto mb-4" />
                         <Link to="/car-details" class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
@@ -40,7 +39,7 @@ const VehicleTypes = () => {
                         </Link>
                     </div>
 
-                    <div class="text-center border-r border-gray-300 pr-6">
+                    <div class="text-center md:border-r border-gray-300 md:pr-6">
                         <h3 class="font-semibold text-lg mb-4">YARIS X</h3>
                         <img src={car2} class="mx-auto mb-4" />
                         <Link to="/car-details" class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
@@ -49,7 +48,7 @@ const VehicleTypes = () => {
                         </Link>
                     </div>
 
-                    <div class="text-center border-r border-gray-300 pr-6">
+                    <div class="text-center md:border-r border-gray-300 md:pr-6">
                         <h3 class="font-semibold text-lg mb-4">YARIS CROSS</h3>
                         <img src={car3} class="mx-auto mb-4" />
                         <button class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
@@ -67,8 +66,7 @@ const VehicleTypes = () => {
                         </Link>
                     </div>
 
-
-                    <div class="text-center border-r border-gray-300 pr-6">
+                    <div class="text-center md:border-r border-gray-300 md:pr-6">
                         <h3 class="font-semibold text-lg mb-4">TOYOTA C-HR+</h3>
                         <img src={car5} class="mx-auto mb-4" />
                         <Link to="/car-details" class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
@@ -77,7 +75,7 @@ const VehicleTypes = () => {
                         </Link>
                     </div>
 
-                    <div class="text-center border-r border-gray-300 pr-6">
+                    <div class="text-center md:border-r border-gray-300 md:pr-6">
                         <h3 class="font-semibold text-lg mb-4">CAMRY</h3>
                         <img src={car6} class="mx-auto mb-4" />
                         <Link to="/car-details" class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
@@ -86,7 +84,7 @@ const VehicleTypes = () => {
                         </Link>
                     </div>
 
-                    <div class="text-center border-r border-gray-300 pr-6">
+                    <div class="text-center md:border-r border-gray-300 md:pr-6">
                         <h3 class="font-semibold text-lg mb-4">PRIUS PLUG-IN</h3>
                         <img src={car7} class="mx-auto mb-4" />
                         <Link to="/car-details" class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">

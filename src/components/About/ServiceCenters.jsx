@@ -5,9 +5,9 @@ import servicecenter3 from '../../assets/servicecenter3.png'
 import servicecenter4 from '../../assets/servicecenter4.png'
 const ServiceCenters = () => {
   return (
-    <div className='bg-white text-black w-full grid grid-cols-2 gap-10 px-15 py-10' >
-      <div className='Card1 flex gap-5'>
-        <img className='w-[282px] h-[332px] ' src={servicecenter1} alt="" />
+    <div className='bg-white text-black w-full grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 lg:px-15 py-10' >
+      <div className='Card1 flex flex-col md:flex-row gap-5'>
+        <img className='w-full md:w-[282px] h-[300px] md:h-[332px] object-cover' src={servicecenter1} alt="" />
         <div>
           <h3 className='text-xl font-bold'>DiT Göttingen</h3>
           <p className='text-gray-500'>Hans-Böckler-Str. 26, 37079 Göttingen</p>
@@ -26,8 +26,8 @@ const ServiceCenters = () => {
 
       </div>
 
-      <div className='Card2 flex gap-5'>
-        <img className='w-[282px] h-[332px] ' src={servicecenter2} alt="" />
+      <div className='Card2 flex flex-col md:flex-row gap-5'>
+        <img className='w-full md:w-[282px] h-[300px] md:h-[332px] object-cover' src={servicecenter2} alt="" />
         <div>
           <h3 className='text-xl font-bold'>Autohaus Royal GmbH</h3>
           <p className='text-gray-500'>Hans-Böckler-Str. 26, 37079 Göttingen</p>
@@ -45,8 +45,8 @@ const ServiceCenters = () => {
         </div>
 
       </div>
-      <div className='Card3 flex gap-5'>
-        <img className='w-[282px] h-[332px] ' src={servicecenter3} alt="" />
+      <div className='Card3 flex flex-col md:flex-row gap-5'>
+        <img className='w-full md:w-[282px] h-[300px] md:h-[332px] object-cover' src={servicecenter3} alt="" />
         <div>
           <h3 className='text-xl font-bold'>Car Dealer Tabor</h3>
           <p className='text-gray-500'>Hans-Böckler-Str. 26, 37079 Göttingen</p>
@@ -64,8 +64,8 @@ const ServiceCenters = () => {
         </div>
 
       </div>
-      <div className='Card4 flex gap-5'>
-        <img className='w-[282px] h-[332px] ' src={servicecenter4} alt="" />
+      <div className='Card4 flex flex-col md:flex-row gap-5'>
+        <img className='w-full md:w-[282px] h-[300px] md:h-[332px] object-cover' src={servicecenter4} alt="" />
         <div>
           <h3 className='text-xl font-bold'>Autohaus GmbH Hamburg</h3>
           <p className='text-gray-500'>Hans-Böckler-Str. 26, 37079 Göttingen</p>

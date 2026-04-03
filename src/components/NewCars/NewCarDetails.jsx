@@ -7,7 +7,7 @@ import Newcar4 from "../../assets/NewCar4.png";
 
 const NewCarDetails = () => {
 
-     const cars = [
+  const cars = [
     {
       name: "The New Toyota bZ4X",
       engine: "2.0L 4-Cyl. Engine",
@@ -48,8 +48,8 @@ const NewCarDetails = () => {
 
   // duplicate to show 8 cards like design
   const allCars = [...cars, ...cars];
-    return (
-       
+  return (
+
     <section className="bg-[#f3f3f5] py-16">
       <div className="max-w-7xl mx-auto px-6">
 
@@ -95,7 +95,7 @@ const NewCarDetails = () => {
 
               {/* FEATURES */}
               <div className="mb-4">
-                <p className="font-semibold text-sm mb-2">Key Features</p>
+                <p className="font-semibold text-sm mb-2 text-black">Key Features</p>
 
                 <div className="grid grid-cols-2 gap-2 text-xs text-gray-500">
                   <span>Android Auto</span>
