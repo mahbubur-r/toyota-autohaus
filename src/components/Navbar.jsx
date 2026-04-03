@@ -34,8 +34,8 @@ const Navbar = () => {
           <Link to="/new-cars" className="hover:text-red-600">New Cars</Link>
           <Link to="/used-cars" className="hover:text-red-600">Used Cars</Link>
           <Link to="/service" className="hover:text-red-600">Service</Link>
-          <Link to="/accessories" className="hover:text-red-600">Accessories</Link>
-          <Link to="/more" className="hover:text-red-600">More</Link>
+          <Link to="" className="hover:text-red-600">Accessories</Link>
+          <Link to="" className="hover:text-red-600">More</Link>
         </nav>
 
         {/* Right Side */}

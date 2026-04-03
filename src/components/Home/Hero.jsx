@@ -32,7 +32,7 @@ const Hero = () => {
                             EXPLORE NEW CARS
                         </button>
 
-                        <button className="border border-gray-700 px-8 py-3 font-semibold hover:bg-gray-100 transition">
+                        <button className="border border-gray-700 text-black px-8 py-3 font-semibold hover:bg-gray-100 transition">
                             FIND USED CARS
                         </button>
                     </div>
@@ -53,7 +53,7 @@ const Hero = () => {
 
                     {/* Car */}
                     <img
-                        src={heroCar }
+                        src={heroCar}
                         alt="Car"
                         className="
                          mt-15 relative z-10"

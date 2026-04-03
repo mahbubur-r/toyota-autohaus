@@ -2,14 +2,7 @@
 @plugin "daisyui";
 
 .input {
-  @apply w-full border border-gray-300 px-4 py-3 outline-none bg-transparent text-sm;
-}
-.input {
-  @apply w-full border border-gray-300 px-3 py-2 text-sm outline-none bg-transparent;
-}
-
-.input {
-  @apply w-full border border-gray-300 px-3 py-2 text-sm outline-none bg-white;
+  @apply w-full border border-gray-300 px-3 py-2 text-sm outline-none bg-white text-black placeholder:text-gray-500;
 }
 
 .goog-te-banner-frame {

@@ -43,10 +43,10 @@ const VehicleTypes = () => {
                     <div class="text-center border-r border-gray-300 pr-6">
                         <h3 class="font-semibold text-lg mb-4">YARIS X</h3>
                         <img src={car2} class="mx-auto mb-4" />
-                        <button class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
+                        <Link to="/car-details" class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
                             CAR DETAILS
                             <span class="border rounded-full p-1">↗</span>
-                        </button>
+                        </Link>
                     </div>
 
                     <div class="text-center border-r border-gray-300 pr-6">
@@ -61,47 +61,47 @@ const VehicleTypes = () => {
                     <div class="text-center">
                         <h3 class="font-semibold text-lg mb-4">COROLLA HATCHBACK</h3>
                         <img src={car4} class="mx-auto mb-4" />
-                        <button class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
+                        <Link to="/car-details" class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
                             CAR DETAILS
                             <span class="border rounded-full p-1">↗</span>
-                        </button>
+                        </Link>
                     </div>
 
 
                     <div class="text-center border-r border-gray-300 pr-6">
                         <h3 class="font-semibold text-lg mb-4">TOYOTA C-HR+</h3>
                         <img src={car5} class="mx-auto mb-4" />
-                        <button class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
+                        <Link to="/car-details" class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
                             CAR DETAILS
                             <span class="border rounded-full p-1">↗</span>
-                        </button>
+                        </Link>
                     </div>
 
                     <div class="text-center border-r border-gray-300 pr-6">
                         <h3 class="font-semibold text-lg mb-4">CAMRY</h3>
                         <img src={car6} class="mx-auto mb-4" />
-                        <button class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
+                        <Link to="/car-details" class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
                             CAR DETAILS
                             <span class="border rounded-full p-1">↗</span>
-                        </button>
+                        </Link>
                     </div>
 
                     <div class="text-center border-r border-gray-300 pr-6">
                         <h3 class="font-semibold text-lg mb-4">PRIUS PLUG-IN</h3>
                         <img src={car7} class="mx-auto mb-4" />
-                        <button class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
+                        <Link to="/car-details" class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
                             CAR DETAILS
                             <span class="border rounded-full p-1">↗</span>
-                        </button>
+                        </Link>
                     </div>
 
                     <div class="text-center">
                         <h3 class="font-semibold text-lg mb-4">MIRAI TOYOTA</h3>
                         <img src={car8} class="mx-auto mb-4" />
-                        <button class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
+                        <Link to="/car-details" class="flex items-center justify-center gap-2 mx-auto text-sm font-medium">
                             CAR DETAILS
                             <span class="border rounded-full p-1">↗</span>
-                        </button>
+                        </Link>
                     </div>
 
                 </div>

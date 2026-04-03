@@ -4,11 +4,11 @@ import Footer from '../components/Footer'
 
 const Layout = () => {
     return (
-        <>
+        <div className="max-w-[1440px] mx-auto">
             <Navbar />
             <Outlet />
             <Footer />
-        </>
+        </div>
     )
 }
 
