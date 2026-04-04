@@ -29,25 +29,25 @@ const Navbar = () => {
 
         {/* Hamburger Menu Icon (Mobile) */}
         <div className="flex md:hidden items-center gap-4">
-            <select
-              onChange={handleLanguageChange}
-              className="border border-gray-300 rounded px-2 py-1 text-sm"
-            >
-              <option value="en">English</option>
-              <option value="de">Deutsch</option>
-            </select>
-            <button 
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
-              className="text-red-600 focus:outline-none"
-            >
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+          <select
+            onChange={handleLanguageChange}
+            className="border border-gray-300 rounded px-2 py-1 text-sm"
+          >
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+          </select>
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="text-red-600 focus:outline-none"
+          >
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
 
         {/* Menu (Desktop) */}
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
+        <nav className="hidden md:flex items-center gap-6 text-md font-medium text-gray-700">
           <Link to="/" className="hover:text-red-600">Home</Link>
           <Link to="/about" className="hover:text-red-600">About Us</Link>
           <Link to="/car-leasing" className="hover:text-red-600">Car Leasing</Link>
@@ -92,7 +92,7 @@ const Navbar = () => {
           <Link to="/service" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-red-600">Service</Link>
           <Link to="" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-red-600">Accessories</Link>
           <Link to="" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-red-600">More</Link>
-          
+
           <button className="bg-red-600 text-white px-4 py-2 text-center text-sm font-semibold rounded hover:bg-red-700 transition w-full mt-2">
             Contact Us
           </button>

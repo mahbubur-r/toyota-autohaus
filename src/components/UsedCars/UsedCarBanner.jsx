@@ -7,11 +7,11 @@ const UsedCarBanner = () => {
 
       {/* TITLE AREA */}
       <div className="text-center mb-6">
-        <p className="text-red-600 font-semibold mb-2">
+        <p className="text-3xl text-red-600 font-bold pt-5">
           Used Cars
         </p>
 
-        <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 max-w-4xl mx-auto leading-tight">
+        <h1 className="text-2xl md:text-4xl font-bold text-black mt-5 max-w-4xl mx-auto leading-tight">
           Certified Used Toyota Cars – Quality You Can Trust
         </h1>
       </div>

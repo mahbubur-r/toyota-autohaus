@@ -2,6 +2,7 @@ import React from "react";
 import car1 from "../../assets/car1.png";
 import car2 from "../../assets/car2.png";
 import car3 from "../../assets/car3.png";
+import { Link } from "react-router";
 
 const cars = [
   {
@@ -104,9 +105,9 @@ const TopVisitingCars = () => {
                     Compare to Others
                   </button>
 
-                  <button className="w-full border border-red-500 text-red-500 py-2 text-sm hover:bg-red-500 hover:text-white transition">
+                  <Link to="/car-details" className="btn bg-white w-full border border-red-500 text-red-500 py-2 text-sm hover:bg-red-500 hover:text-white transition">
                     View Details
-                  </button>
+                  </Link>
 
                 </div>
 

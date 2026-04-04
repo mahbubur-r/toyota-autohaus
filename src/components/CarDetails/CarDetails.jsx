@@ -6,7 +6,7 @@ import TopVisitingCars from './TopVisitingCars';
 
 const CarDetails = () => {
     return (
-        <div className='border-2 border-red-500 text-black'>
+        <div className='text-black'>
             <CarDetailsHero></CarDetailsHero>
             <SalesContact></SalesContact>
             <CarDetailsSection></CarDetailsSection>

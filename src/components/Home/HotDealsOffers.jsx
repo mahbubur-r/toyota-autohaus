@@ -1,5 +1,6 @@
 import React from 'react';
-import car2 from '../../assets/car2.png';
+import car2 from '../../assets/hotdealscar.png';
+import logo from '../../assets/toyota-logo.png';
 
 const HotDealsOffers = () => {
 
@@ -69,7 +70,7 @@ const HotDealsOffers = () => {
 
                 {/* Vertical Timeline */}
                 <div className="relative flex flex-col items-center w-full mt-10">
-                    
+
                     {/* Watermark Toyota Background */}
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[100px] md:text-[180px] font-extrabold text-[#fdf6f7] select-none pointer-events-none z-0">
                         Toyota
@@ -82,7 +83,7 @@ const HotDealsOffers = () => {
                     <div className="w-full z-20 flex flex-col gap-10 md:gap-0 mt-8">
                         {offers.map((offer, idx) => (
                             <div key={idx} className={`flex flex-col md:flex-row w-full items-start md:items-center justify-between relative md:mb-12 ${offer.align === 'right' ? 'md:flex-row-reverse' : ''}`}>
-                                
+
                                 {/* Left Content (Text Block) */}
                                 <div className={`w-full md:w-1/2 flex flex-col md:flex-row ${offer.align === 'left' ? 'md:justify-end md:pr-16 md:text-right pl-16 md:pl-0' : 'md:justify-start md:pl-16 md:text-left pl-16 md:pl-0'}`}>
                                     <div className="w-full">
@@ -111,39 +112,41 @@ const HotDealsOffers = () => {
                 </div>
 
                 {/* Bottom Promo Banner */}
-                <div className="relative bg-white shadow-[0_15px_40px_rgb(0,0,0,0.12)] rounded-3xl overflow-hidden mt-32 w-full h-[450px]">
-                    
+                <div className="relative bg-[#ffffff] shadow-[0_15px_40px_rgb(0,0,0,0.12)] rounded-[2.5rem] overflow-hidden mt-32 w-[98%] md:w-full mx-auto h-[480px] md:h-[500px]">
+
                     {/* Background Red Polygon */}
-                    <div className="absolute top-0 right-0 h-full w-[60%] bg-[#e40718] z-0" style={{ clipPath: "polygon(20% 0, 100% 0, 100% 100%, 0% 100%)" }}></div>
-                    
+                    <div className="absolute top-0 right-0 h-full w-[65%] md:w-[45%] bg-[#e40718] z-0" style={{ clipPath: "polygon(35% 0, 100% 0, 100% 100%, 0% 100%)" }}></div>
+
                     {/* Bottom Red rounded base */}
-                    <div className="absolute bottom-6 left-[3%] w-[94%] h-12 bg-red-600 rounded-3xl z-10 shadow-lg" style={{ bottom: "25px", zIndex: "1" }}></div>
+                    <div className="absolute bottom-0 left-[5%] md:left-[10%] right-0 h-[60px] md:h-[80px] bg-[#e40718] z-0 rounded-tl-[60px] md:rounded-tl-[80px]"></div>
 
                     {/* Content Layer */}
-                    <div className="relative z-20 flex h-full">
-                        
-                        {/* Left Side Info */}
-                        <div className="w-full md:w-[45%] p-10 md:p-14 flex flex-col justify-center bg-white h-full" style={{ clipPath: "polygon(0 0, 100% 0, 80% 100%, 0% 100%)", background: "transparent" }}>
-                            
+                    <div className="absolute inset-0 z-20 flex flex-col justify-center pointer-events-none pb-6 md:pb-12">
+                        {/* Upper Text Section */}
+                        <div className="pl-6 md:pl-16">
                             {/* Logo */}
-                            <div className="flex items-center gap-3 text-red-600 mb-10">
-                                <span className="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-xs font-bold">T</span>
-                                <span className="text-xl font-bold tracking-[0.2em] text-gray-900">TOYOTA</span>
+                            <div className="flex items-center gap-4 mb-6 md:mb-8">
+                                <div className="bg-[#e40718] w-10 md:w-16 h-10 md:h-12 flex items-center justify-center p-2 rounded-sm shadow-md">
+                                    <img src={logo} alt="Toyota" className="w-full h-full object-contain brightness-0 invert" />
+                                </div>
+                                <span className="text-xl md:text-2xl font-bold tracking-widest text-[#0c0d12]">TOYOTA</span>
                             </div>
-                            
-                            <h1 className="text-4xl md:text-5xl text-red-600 font-bold mb-3 tracking-wide">TOYOTA GLABZA</h1>
-                            <h2 className="text-2xl md:text-3xl text-gray-900 font-bold mb-8 tracking-widest uppercase">VISTI TOYOTA.DE</h2>
 
-                            <div className="bg-[#111111] text-white p-6 max-w-sm rounded-[2px] shadow-lg relative -left-4 md:-left-14">
-                                <p className="mb-1 text-[15px] font-medium"><span className="text-gray-400">Phone Number:</span> 069-12345678</p>
-                                <p className="text-[15px] font-medium"><span className="text-gray-400">Email:</span> info@toyota-glabza.de</p>
+                            <div className="ml-6 md:ml-[15%] mb-10 md:mb-12">
+                                <h1 className="text-[34px] sm:text-[44px] md:text-[52px] text-[#e40718] font-black tracking-tighter uppercase leading-[1.1] mb-1">TOYOTA GLABZA</h1>
+                                <h2 className="text-[20px] sm:text-[28px] md:text-[32px] text-[#0c0d12] font-black tracking-tight uppercase leading-[1.1]">VISTI TOYOTA.DE</h2>
                             </div>
                         </div>
 
+                        {/* Contact Box flush to left */}
+                        <div className="bg-[#0c0d12] text-white py-5 px-6 md:px-8 pr-12 md:pr-16 self-start shadow-2xl pointer-events-auto rounded-r-md border-l-0">
+                            <p className="text-[14px] md:text-[16px] font-medium leading-[2] tracking-wider">Phone Number: 069-12345678</p>
+                            <p className="text-[14px] md:text-[16px] font-medium leading-[2] tracking-wider">Email: info@toyota-glabza.de</p>
+                        </div>
                     </div>
 
                     {/* Right Side Car Element */}
-                    <img src={car2} alt="Toyota bZ4X" className="absolute bottom-8 -right-10 md:right-10 z-30 w-[80%] md:w-[65%] object-contain pointer-events-none drop-shadow-2xl" />
+                    <img src={car2} alt="Toyota bZ4X" className="absolute bottom-2 md:-bottom-[20px] -right-12 md:-right-[20px] z-30 w-[110%] md:w-[75%] max-w-[800px] object-contain pointer-events-none drop-shadow-2xl scale-110 md:scale-100 origin-bottom-right" />
 
                 </div>
 

@@ -40,7 +40,7 @@ const Hero = () => {
 
                 {/* RIGHT */}
                 <div className="relative flex flex-col items-end">
-                    
+
                     {/* People */}
                     <div className="absolute -top-10 right-0 md:right-10 flex flex-col items-center gap-2">
                         <div className="flex -space-x-3">
@@ -61,7 +61,7 @@ const Hero = () => {
                     {/* Glass Card */}
                     <div className="absolute bottom-20 right-4 bg-white/60 backdrop-blur-xl rounded-2xl shadow-xl p-5 text-center border border-white/40">
                         <h3 className="text-5xl font-extrabold text-gray-900">50<span className="text-gray-900">+</span></h3>
-                        <p className="text-gray-600 text-sm font-medium leading-tight mt-1">Car Types <br/> Available</p>
+                        <p className="text-gray-600 text-sm font-medium leading-tight mt-1">Car Types <br /> Available</p>
                     </div>
 
                     {/* BOTTOM PILLS */}
@@ -90,7 +90,7 @@ const Hero = () => {
             {/* FLOATING VEHICLE SEARCH */}
             <div className="max-w-6xl mx-auto mt-12 md:mt-20 bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] py-8 px-6 md:px-10 relative z-20 mx-4 md:mx-auto border border-gray-100">
                 <h3 className="text-2xl font-bold text-[#353f4f] mb-6">Find Available Vehicles</h3>
-                
+
                 {/* Search Bar */}
                 <div className="bg-[#f2f4f7] rounded-md flex flex-col md:flex-row w-full overflow-hidden border border-gray-200">
                     <select className="flex-1 bg-transparent py-4 px-4 md:px-6 outline-none border-b md:border-b-0 md:border-r border-gray-300 text-gray-600 text-sm font-medium cursor-pointer">
@@ -110,7 +110,7 @@ const Hero = () => {
                 {/* Checkboxes */}
                 <div className="flex flex-wrap items-center gap-4 md:gap-8 mt-6 text-sm text-gray-500 font-medium">
                     <label className="flex items-center gap-2 cursor-pointer">
-                        <input type="checkbox" className="w-4 h-4 accent-red-600 rounded border-gray-300" />
+                        <input type="checkbox" className="w-4 h-4 accent-red-600 rounded border-white" />
                         New Cars
                     </label>
                     <label className="flex items-center gap-2 cursor-pointer">

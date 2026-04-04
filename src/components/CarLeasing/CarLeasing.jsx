@@ -7,8 +7,6 @@ import CarLeasingCondition from './CarLeasingCondition';
 const CarLeasing = () => {
     return (
         <div>
-            
-            
             <CarLeasingHero></CarLeasingHero>
             <CarLeasingCondition></CarLeasingCondition>
             <CarLeasingBanner></CarLeasingBanner>
