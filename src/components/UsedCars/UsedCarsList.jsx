@@ -32,7 +32,6 @@ const UsedCarsList = () => {
     <section className="bg-[#f5f5f5] py-12 text-black">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* FILTER BAR */}
         <div className="grid md:grid-cols-4 gap-4 mb-8">
           <select className="border px-3 py-2 text-sm"><option>Select model</option></select>
           <select className="border px-3 py-2 text-sm"><option>Registration Date From</option></select>
@@ -48,7 +47,6 @@ const UsedCarsList = () => {
           </div>
         </div>
 
-        {/* CAR LIST */}
         <div className="space-y-6">
           {currentCars.map((car, i) => (
             <div key={i} className="bg-white p-4 md:p-6 flex flex-col md:flex-row gap-6 border border-gray-200">
@@ -89,12 +87,9 @@ const UsedCarsList = () => {
           ))}
         </div>
 
-        {/* PAGINATION */}
         <div className="flex justify-between items-center mt-10 text-sm">
 
           <div className="flex gap-2">
-
-            {/* BACK */}
             <button
               onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
               className="px-3 py-1 border disabled:opacity-50"
@@ -103,20 +98,17 @@ const UsedCarsList = () => {
               Back
             </button>
 
-            {/* PAGE NUMBERS */}
             {[...Array(totalPages)].map((_, i) => (
               <button
                 key={i}
                 onClick={() => setCurrentPage(i + 1)}
-                className={`px-3 py-1 border ${
-                  currentPage === i + 1 ? "bg-black text-white" : ""
-                }`}
+                className={`px-3 py-1 border ${currentPage === i + 1 ? "bg-black text-white" : ""
+                  }`}
               >
                 {i + 1}
               </button>
             ))}
 
-            {/* NEXT */}
             <button
               onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
               className="px-3 py-1 border disabled:opacity-50"

@@ -7,7 +7,6 @@ const SalesContact = () => {
 
       <div className="max-w-6xl mx-auto px-6 flex items-center gap-8">
 
-        {/* LEFT IMAGE */}
         <div className="w-[180px] shrink-0">
           <img
             src={person}
@@ -16,7 +15,6 @@ const SalesContact = () => {
           />
         </div>
 
-        {/* RIGHT CONTENT */}
         <div className="flex-1">
 
           <h2 className="text-xl font-bold mb-2">
@@ -35,7 +33,6 @@ const SalesContact = () => {
             Sales Consultant
           </p>
 
-          {/* PHONE BUTTON */}
           <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 flex items-center gap-2 font-semibold w-fit transition">
             📞 +49 97 25917 3740
           </button>

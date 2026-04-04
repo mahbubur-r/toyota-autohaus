@@ -63,13 +63,10 @@ const ServiceSection = () => {
     <section className="bg-[#f5f5f5] py-16 text-black">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
 
-        {/* LEFT SIDE (SERVICES) */}
         <div className="md:col-span-2 space-y-6">
 
           {services.map((service, i) => (
             <div key={i} className="bg-white p-6 border border-gray-200 shadow-sm">
-
-              {/* TOP */}
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-lg font-semibold">
                   {service.title}
@@ -85,13 +82,10 @@ const ServiceSection = () => {
                 </div>
               </div>
 
-              {/* DESC */}
               <p className="text-gray-500 text-sm mb-4 max-w-xl">
                 Stay worry-free with professional servicing, factory-recommended
                 check-ups, and official TÜV / emissions tests.
               </p>
-
-              {/* FEATURES */}
               <div className="grid grid-cols-2 gap-y-2 text-sm text-gray-600 mb-6">
                 {service.features.map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2">
@@ -101,7 +95,6 @@ const ServiceSection = () => {
                 ))}
               </div>
 
-              {/* BUTTON */}
               <div className="flex justify-end">
                 <button className="bg-red-600 text-white px-6 py-2 text-sm font-semibold hover:bg-red-700 transition">
                   Get more
@@ -113,10 +106,8 @@ const ServiceSection = () => {
 
         </div>
 
-        {/* RIGHT SIDE (INFO BOXES) */}
         <div className="space-y-6">
 
-          {/* LOCATION */}
           <div className="bg-white p-6 border border-gray-200">
             <h4 className="font-semibold mb-3">
               Main Location – Göttingen
@@ -136,7 +127,6 @@ const ServiceSection = () => {
             </p>
           </div>
 
-          {/* CONTACT */}
           <div className="bg-white p-6 border border-gray-200">
             <h4 className="font-semibold mb-3">
               Phone (Sales & Service)
@@ -148,7 +138,6 @@ const ServiceSection = () => {
             </p>
           </div>
 
-          {/* OPENING HOURS */}
           <div className="bg-white p-6 border border-gray-200">
             <h4 className="font-semibold mb-3">
               Opening Hours

@@ -5,10 +5,8 @@ import bz4xNight from '../../assets/bz4x_night.png';
 const FeaturedCars = () => {
     return (
         <section className="w-full">
-            {/* ROW 1 */}
             <div className="grid grid-cols-1 md:grid-cols-2">
 
-                {/* Image Left */}
                 <div className="w-full h-[400px] md:h-[500px]">
                     <img src={tacomaDesert} alt="Toyota Tacoma" className="w-full h-full object-cover" />
                 </div>
@@ -28,7 +26,7 @@ const FeaturedCars = () => {
 
             </div>
 
-            {/* ROW 2 */}
+
             <div className="grid grid-cols-1 md:grid-cols-2">
 
                 {/* Text Left */}

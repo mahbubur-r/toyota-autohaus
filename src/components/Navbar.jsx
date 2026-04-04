@@ -46,7 +46,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Menu (Desktop) */}
         <nav className="hidden md:flex items-center gap-6 text-md font-medium text-gray-700">
           <Link to="/" className="hover:text-red-600">Home</Link>
           <Link to="/about" className="hover:text-red-600">About Us</Link>
@@ -58,10 +57,8 @@ const Navbar = () => {
           <Link to="" className="hover:text-red-600">More</Link>
         </nav>
 
-        {/* Right Side (Desktop) */}
         <div className="hidden md:flex items-center gap-4">
 
-          {/* LANGUAGE DROPDOWN (UNCHANGED UI) */}
           <select
             onChange={handleLanguageChange}
             className="border border-gray-300 rounded px-2 py-1 text-sm"
@@ -70,10 +67,8 @@ const Navbar = () => {
             <option value="de">Deutsch</option>
           </select>
 
-          {/* Hidden Google Translate */}
           <div id="google_translate_element" className="hidden"></div>
 
-          {/* Button */}
           <button className="bg-red-600 text-white px-4 py-2 text-sm font-semibold rounded hover:bg-red-700 transition">
             Contact Us
           </button>
@@ -81,7 +76,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-md py-4 px-6 flex flex-col gap-4">
           <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-red-600">Home</Link>

@@ -46,14 +46,12 @@ const NewCarDetails = () => {
     },
   ];
 
-  // duplicate to show 8 cards like design
   const allCars = [...cars, ...cars];
   return (
 
     <section className="bg-[#f3f3f5] py-16">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* GRID */}
         <div className="grid md:grid-cols-4 gap-6">
 
           {allCars.map((car, i) => (
@@ -62,30 +60,25 @@ const NewCarDetails = () => {
               className="bg-white border border-gray-200 p-5 hover:shadow-md hover:-translate-y-1 transition duration-300"
             >
 
-              {/* IMAGE */}
               <div className="relative mb-4">
                 <img
                   src={car.image}
                   className="w-full h-40 object-contain"
                 />
 
-                {/* wishlist */}
                 <div className="absolute top-2 right-2 bg-white p-2 rounded-full shadow text-red-500 cursor-pointer">
                   ❤
                 </div>
               </div>
 
-              {/* STOCK */}
               <span className="text-green-600 bg-green-100 px-3 py-1 text-xs mb-3 inline-block">
                 In Stock
               </span>
 
-              {/* TITLE */}
               <h3 className="font-semibold text-black text-lg mb-3">
                 {car.name}
               </h3>
 
-              {/* SPECS */}
               <div className="grid grid-cols-2 gap-y-2 text-sm text-gray-600 mb-4">
                 <span>Engine:</span><span>{car.engine}</span>
                 <span>Fuel Efficiency:</span><span>{car.fuel}</span>
@@ -93,7 +86,6 @@ const NewCarDetails = () => {
                 <span>Seat Plan:</span><span>{car.seats}</span>
               </div>
 
-              {/* FEATURES */}
               <div className="mb-4">
                 <p className="font-semibold text-sm mb-2 text-black">Key Features</p>
 
@@ -107,13 +99,10 @@ const NewCarDetails = () => {
                 </div>
               </div>
 
-              {/* PRICE */}
               <div className="flex justify-between items-center mb-4">
                 <span className="text-sm text-gray-500">Smart Price</span>
                 <span className="font-bold text-lg text-black ">{car.price}</span>
               </div>
-
-              {/* BUTTON */}
               <button className="w-full border border-red-500 text-red-500 py-2 font-medium hover:bg-red-500 hover:text-white transition">
                 View Details
               </button>
@@ -123,7 +112,6 @@ const NewCarDetails = () => {
 
         </div>
 
-        {/* PAGINATION */}
         <div className="flex justify-end items-center mt-10 gap-2 text-sm">
 
           <button className="px-3 py-1 border text-gray-400">‹ Back</button>

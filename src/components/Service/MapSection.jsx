@@ -6,7 +6,6 @@ const MapSection = () => {
 
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* TITLE */}
         <div className="mb-8">
           <h2 className="text-4xl font-bold mb-3">
             Your Vehicle's Best Friend
@@ -17,10 +16,8 @@ const MapSection = () => {
           </p>
         </div>
 
-        {/* MAP CONTAINER */}
         <div className="relative rounded-xl overflow-hidden">
 
-          {/* GOOGLE MAP */}
           <iframe
             title="map"
             src="https://www.google.com/maps?q=New+York&output=embed"
@@ -28,15 +25,12 @@ const MapSection = () => {
             loading="lazy"
           ></iframe>
 
-          {/* INFO CARD */}
           <div className="absolute right-6 top-1/2 -translate-y-1/2 bg-white shadow-xl p-6 w-[320px] rounded-lg">
 
-            {/* CLOSE ICON */}
             <button className="absolute top-3 right-3 text-gray-400 hover:text-black">
               ✕
             </button>
 
-            {/* LOCATION */}
             <div className="flex gap-3 mb-5">
               <div className="text-blue-500 text-xl">📍</div>
               <div>
@@ -49,7 +43,6 @@ const MapSection = () => {
               </div>
             </div>
 
-            {/* PHONE */}
             <div className="flex gap-3 mb-5">
               <div className="text-blue-500 text-xl">📞</div>
               <div>
@@ -62,7 +55,6 @@ const MapSection = () => {
               </div>
             </div>
 
-            {/* HOURS */}
             <div className="flex gap-3">
               <div className="text-blue-500 text-xl">⏰</div>
               <div>

@@ -33,18 +33,14 @@ const TopVisitingCars = () => {
 
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* TITLE */}
         <h2 className="text-3xl font-bold mb-10">
           Top Visiting Cars
         </h2>
-
-        {/* GRID */}
         <div className="grid md:grid-cols-4 gap-6">
 
           {cars.map((car, i) => (
             <div key={i} className="bg-white border border-gray-200">
 
-              {/* IMAGE */}
               <div className="relative">
 
                 <img
@@ -53,7 +49,6 @@ const TopVisitingCars = () => {
                   className="w-full h-48 object-cover"
                 />
 
-                {/* arrows */}
                 <button className="absolute left-2 top-1/2 -translate-y-1/2 bg-white w-7 h-7 rounded-full shadow text-sm">
                   ‹
                 </button>
@@ -61,14 +56,12 @@ const TopVisitingCars = () => {
                   ›
                 </button>
 
-                {/* bookmark */}
                 <div className="absolute top-2 right-2 bg-white w-8 h-8 flex items-center justify-center rounded-full shadow text-red-500">
                   🔖
                 </div>
 
               </div>
 
-              {/* CONTENT */}
               <div className="p-4 text-sm">
 
                 <h3 className="text-lg font-semibold mb-2">
@@ -80,7 +73,6 @@ const TopVisitingCars = () => {
                   <span className="text-red-500">📍 {car.location}</span>
                 </div>
 
-                {/* SPECS */}
                 <div className="grid grid-cols-2 gap-y-2 text-xs text-gray-600 mb-4">
 
                   <span>First registration</span><span>09-2024</span>
@@ -94,11 +86,9 @@ const TopVisitingCars = () => {
 
                 </div>
 
-                {/* PRICE */}
                 <p className="text-xs text-gray-500">Start from</p>
                 <p className="font-bold text-lg mb-4">€119.00/Month</p>
 
-                {/* BUTTONS */}
                 <div className="space-y-2">
 
                   <button className="w-full border border-gray-300 py-2 text-sm hover:bg-gray-100">

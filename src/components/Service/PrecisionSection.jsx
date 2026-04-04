@@ -34,7 +34,6 @@ const PrecisionSection = () => {
 
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* HEADER */}
         <div className="text-center mb-14">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Precision Repairs, Exceptional Service
@@ -45,14 +44,12 @@ const PrecisionSection = () => {
           </p>
         </div>
 
-        {/* FEATURE GRID */}
         <div className="grid md:grid-cols-3 gap-6 mb-16">
           {features.map((item, i) => (
             <div
               key={i}
               className="bg-white p-6 rounded-2xl border border-gray-200 hover:shadow-md transition"
             >
-              {/* ICON */}
               <div className="w-12 h-12 flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4 text-xl">
                 ⭐
               </div>
@@ -68,17 +65,14 @@ const PrecisionSection = () => {
           ))}
         </div>
 
-        {/* CTA BOX */}
         <div className="bg-white rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 mb-16 shadow-sm">
 
-          {/* IMAGE */}
           <img
             src={teamImg}
             alt="Team"
             className="w-full md:w-[220px] h-[140px] object-cover rounded-lg"
           />
 
-          {/* TEXT */}
           <div className="flex-1">
             <h3 className="text-xl font-semibold mb-2">
               Get expert car service at Dit Gottingen today!
@@ -88,13 +82,10 @@ const PrecisionSection = () => {
             </p>
           </div>
 
-          {/* BUTTON */}
           <button className="bg-red-600 text-white px-6 py-3 font-semibold hover:bg-red-700 transition">
             Learn More
           </button>
         </div>
-
-        {/* STATS */}
         <div className="grid md:grid-cols-3 text-center gap-10">
 
           <div>

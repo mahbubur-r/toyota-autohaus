@@ -2,23 +2,18 @@ import React from 'react';
 import NewCar from '../../assets/NewCarBanner.png'
 
 const NewCarBanner = () => {
-    return (
-      
+  return (
+
 
 
     <section className="relative h-[420px] overflow-hidden bg-black">
 
-      {/* BACKGROUND GRADIENT */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_50%,rgba(255,255,255,0.08),transparent_60%)]"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-[#111] via-[#222] to-black"></div>
 
-      {/* RED SHAPE (FIXED) */}
       <div className="absolute left-0 top-0 h-full w-[350px] bg-red-600 clip-diagonal"></div>
-
-      {/* CONTENT */}
       <div className="relative max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
 
-        {/* LEFT IMAGE */}
         <div className="relative">
           <img
             src={NewCar}
@@ -26,7 +21,6 @@ const NewCarBanner = () => {
           />
         </div>
 
-        {/* RIGHT TEXT */}
         <div className="text-right text-white max-w-md mr-10">
 
           <p className="text-gray-400 tracking-wide mb-2">
@@ -50,9 +44,9 @@ const NewCarBanner = () => {
         </div>
       </div>
     </section>
-  
 
-    );
+
+  );
 };
 
 export default NewCarBanner;

@@ -62,29 +62,21 @@ const HotDealsOffers = () => {
         <section className="py-20 bg-white text-black relative">
             <div className="max-w-5xl mx-auto px-6">
 
-                {/* Section Title */}
                 <div className="text-center mb-16 relative z-20">
                     <h2 className="text-4xl font-extrabold text-gray-900 mb-3">Hot Deals & Limited-Time Offers</h2>
                     <p className="text-xs text-gray-500 font-medium tracking-widest uppercase">Drive Your Dream Toyota or Lexus For Less.</p>
                 </div>
-
-                {/* Vertical Timeline */}
                 <div className="relative flex flex-col items-center w-full mt-10">
 
-                    {/* Watermark Toyota Background */}
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[100px] md:text-[180px] font-extrabold text-[#fdf6f7] select-none pointer-events-none z-0">
                         Toyota
                     </div>
 
-                    {/* Dotted Line */}
                     <div className="absolute left-[20px] md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-[2px] border-l-2 border-dotted border-gray-300 z-10"></div>
 
-                    {/* Timeline Items */}
                     <div className="w-full z-20 flex flex-col gap-10 md:gap-0 mt-8">
                         {offers.map((offer, idx) => (
                             <div key={idx} className={`flex flex-col md:flex-row w-full items-start md:items-center justify-between relative md:mb-12 ${offer.align === 'right' ? 'md:flex-row-reverse' : ''}`}>
-
-                                {/* Left Content (Text Block) */}
                                 <div className={`w-full md:w-1/2 flex flex-col md:flex-row ${offer.align === 'left' ? 'md:justify-end md:pr-16 md:text-right pl-16 md:pl-0' : 'md:justify-start md:pl-16 md:text-left pl-16 md:pl-0'}`}>
                                     <div className="w-full">
                                         <h3 className="font-bold text-gray-900 text-lg mb-2">{offer.title}</h3>
@@ -100,7 +92,7 @@ const HotDealsOffers = () => {
                                     <div className="w-2.5 h-2.5 rounded-full bg-gray-400"></div>
                                 </div>
 
-                                {/* Right Content (Icon Block) */}
+
                                 <div className={`w-full md:w-1/2 flex mt-4 md:mt-0 ${offer.align === 'left' ? 'md:justify-start md:pl-16 pl-16 md:pl-0' : 'md:justify-end md:pr-16 md:pl-0 pl-16'}`}>
                                     <div className={`w-28 h-28 ${offer.bg} shadow-[0_10px_30px_rgb(0,0,0,0.08)] flex items-center justify-center ${offer.iconColor}`}>
                                         {offer.icon}
@@ -111,20 +103,14 @@ const HotDealsOffers = () => {
                     </div>
                 </div>
 
-                {/* Bottom Promo Banner */}
                 <div className="relative bg-[#ffffff] shadow-[0_15px_40px_rgb(0,0,0,0.12)] rounded-[2.5rem] overflow-hidden mt-32 w-[98%] md:w-full mx-auto h-[480px] md:h-[500px]">
 
-                    {/* Background Red Polygon */}
                     <div className="absolute top-0 right-0 h-full w-[65%] md:w-[45%] bg-[#e40718] z-0" style={{ clipPath: "polygon(35% 0, 100% 0, 100% 100%, 0% 100%)" }}></div>
 
-                    {/* Bottom Red rounded base */}
                     <div className="absolute bottom-0 left-[5%] md:left-[10%] right-0 h-[60px] md:h-[80px] bg-[#e40718] z-0 rounded-tl-[60px] md:rounded-tl-[80px]"></div>
 
-                    {/* Content Layer */}
                     <div className="absolute inset-0 z-20 flex flex-col justify-center pointer-events-none pb-6 md:pb-12">
-                        {/* Upper Text Section */}
                         <div className="pl-6 md:pl-16">
-                            {/* Logo */}
                             <div className="flex items-center gap-4 mb-6 md:mb-8">
                                 <div className="bg-[#e40718] w-10 md:w-16 h-10 md:h-12 flex items-center justify-center p-2 rounded-sm shadow-md">
                                     <img src={logo} alt="Toyota" className="w-full h-full object-contain brightness-0 invert" />
@@ -138,14 +124,12 @@ const HotDealsOffers = () => {
                             </div>
                         </div>
 
-                        {/* Contact Box flush to left */}
                         <div className="bg-[#0c0d12] text-white py-5 px-6 md:px-8 pr-12 md:pr-16 self-start shadow-2xl pointer-events-auto rounded-r-md border-l-0">
                             <p className="text-[14px] md:text-[16px] font-medium leading-[2] tracking-wider">Phone Number: 069-12345678</p>
                             <p className="text-[14px] md:text-[16px] font-medium leading-[2] tracking-wider">Email: info@toyota-glabza.de</p>
                         </div>
                     </div>
 
-                    {/* Right Side Car Element */}
                     <img src={car2} alt="Toyota bZ4X" className="absolute bottom-2 md:-bottom-[20px] -right-12 md:-right-[20px] z-30 w-[110%] md:w-[75%] max-w-[800px] object-contain pointer-events-none drop-shadow-2xl scale-110 md:scale-100 origin-bottom-right" />
 
                 </div>

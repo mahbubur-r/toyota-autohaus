@@ -5,7 +5,6 @@ const UsedCarBanner = () => {
   return (
     <section className="bg-[#f5f5f5] pt-10">
 
-      {/* TITLE AREA */}
       <div className="text-center mb-6">
         <p className="text-3xl text-red-600 font-bold pt-5">
           Used Cars
@@ -16,7 +15,6 @@ const UsedCarBanner = () => {
         </h1>
       </div>
 
-      {/* IMAGE SECTION */}
       <div className="relative">
 
         <img
@@ -25,7 +23,6 @@ const UsedCarBanner = () => {
           className="w-full h-[260px] md:h-[400px] object-cover"
         />
 
-        {/* RIGHT SIDE FLOAT ICONS */}
         <div className="hidden md:flex flex-col gap-4 absolute right-4 top-1/2 -translate-y-1/2">
           <button className="bg-red-600 text-white p-3 rounded hover:bg-red-700">
             🛒

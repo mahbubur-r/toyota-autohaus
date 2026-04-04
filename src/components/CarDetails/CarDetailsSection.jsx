@@ -28,12 +28,12 @@ const detailsRight = [
 ];
 
 const features = [
-  "ABS","Adaptive Cruise Control","Alloy wheels","Ambient lighting","Arm rest",
-  "Automatic dimming mirror","Bi-xenon headlights","Bluetooth","Cruise control",
-  "Driver Airbag","ESP","Electric windows","Emergency brake assist",
-  "Four wheel drive","Front airbags","Hands-free kit","Heated seats",
-  "Head-up display","Navigation system","Lane change assist","LED headlights",
-  "Rear parking sensors","Sport seats","Tyre pressure monitoring"
+  "ABS", "Adaptive Cruise Control", "Alloy wheels", "Ambient lighting", "Arm rest",
+  "Automatic dimming mirror", "Bi-xenon headlights", "Bluetooth", "Cruise control",
+  "Driver Airbag", "ESP", "Electric windows", "Emergency brake assist",
+  "Four wheel drive", "Front airbags", "Hands-free kit", "Heated seats",
+  "Head-up display", "Navigation system", "Lane change assist", "LED headlights",
+  "Rear parking sensors", "Sport seats", "Tyre pressure monitoring"
 ];
 
 const otherDetails = [
@@ -60,13 +60,10 @@ const CarDetailsSection = () => {
     <section className="bg-[#f5f5f5] py-12">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* TITLE */}
         <h2 className="text-2xl font-bold mb-6">Car Details</h2>
 
-        {/* DETAILS GRID */}
         <div className="grid md:grid-cols-2 gap-10 mb-10">
 
-          {/* LEFT */}
           <div className="space-y-3">
             {detailsLeft.map((item, i) => (
               <div key={i} className="flex justify-between border-b pb-2 text-sm">
@@ -76,7 +73,6 @@ const CarDetailsSection = () => {
             ))}
           </div>
 
-          {/* RIGHT */}
           <div className="space-y-3">
             {detailsRight.map((item, i) => (
               <div key={i} className="flex justify-between border-b pb-2 text-sm">
@@ -88,7 +84,6 @@ const CarDetailsSection = () => {
 
         </div>
 
-        {/* FEATURES */}
         <h3 className="text-xl font-semibold mb-4">Features</h3>
 
         <div className="grid md:grid-cols-4 gap-4 mb-12">
@@ -100,7 +95,6 @@ const CarDetailsSection = () => {
           ))}
         </div>
 
-        {/* OTHER DETAILS */}
         <h3 className="text-xl font-semibold mb-4">Other details</h3>
 
         <div className="grid md:grid-cols-2 gap-10 mb-12">
@@ -112,7 +106,6 @@ const CarDetailsSection = () => {
           ))}
         </div>
 
-        {/* DESCRIPTION / FAQ */}
         <h3 className="text-xl font-semibold mb-4">Description</h3>
 
         <div className="space-y-3 max-w-xl">

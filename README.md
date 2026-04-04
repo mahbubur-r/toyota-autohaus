@@ -86,24 +86,3 @@ npm run dev
 ```
 
 The application will be accessible via your browser at `http://localhost:5173/` (or the respective port indicated in your console).
-
-### Building for Production
-
-To create an optimized production build:
-
-```bash
-npm run build
-```
-
-This will run the build sequence and place the compiled assets within the standard `dist/` directory, ready to be served statically. To preview locally how the production build looks, you can run:
-
-```bash
-npm run preview
-```
-
----
-
-## 🧰 Customization & Development
-
-- **Modifying Theme:** Primary colors, dark mode defaults, and visual tokens are managed with Tailwind and DaisyUI configurations.
-- **Linting:** Run `npm run lint` periodically to maintain code quality based on the predefined ESLint hooks structure.

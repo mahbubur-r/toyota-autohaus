@@ -14,17 +14,14 @@ const CarDetailsHero = () => {
 
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* TITLE */}
         <h1 className="text-3xl font-bold mb-6">
           2022 Toyota Highlander XLE FWD
         </h1>
 
         <div className="grid md:grid-cols-3 gap-6">
 
-          {/* LEFT IMAGE GALLERY */}
           <div className="md:col-span-2 flex gap-4">
 
-            {/* MAIN IMAGE */}
             <div className="flex-1">
               <img
                 src={selectedImg}
@@ -33,23 +30,20 @@ const CarDetailsHero = () => {
               />
             </div>
 
-            {/* THUMBNAILS */}
             <div className="flex flex-col gap-3">
               {images.map((img, i) => (
                 <img
                   key={i}
                   src={img}
                   onClick={() => setSelectedImg(img)}
-                  className={`w-[90px] h-[80px] object-cover cursor-pointer border-2 ${
-                    selectedImg === img ? "border-red-500" : "border-transparent"
-                  }`}
+                  className={`w-[90px] h-[80px] object-cover cursor-pointer border-2 ${selectedImg === img ? "border-red-500" : "border-transparent"
+                    }`}
                 />
               ))}
             </div>
 
           </div>
 
-          {/* RIGHT PRICE CARD */}
           <div className="bg-white p-6 shadow-sm border border-gray-200 flex flex-col justify-between">
 
             <div>
@@ -84,7 +78,6 @@ const CarDetailsHero = () => {
               </div>
             </div>
 
-            {/* BUTTON */}
             <button className="mt-6 bg-red-600 text-white py-3 font-semibold hover:bg-red-700 transition">
               Get more Details
             </button>

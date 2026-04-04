@@ -15,28 +15,23 @@ const NewCar = () => {
                     car with your desired drivetrain
                 </h2>
 
-                {/* Cars Container */}
                 <div className="relative flex items-center justify-between w-full h-[250px] md:h-[400px] mt-10">
-                    
-                    {/* Left Car Container */}
+
                     <div className="relative w-1/4 h-full hidden md:block">
                         <img src={graySuv} className="absolute right-0 h-full w-auto object-contain drop-shadow-xl" />
                         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10 w-[120%]"></div>
                     </div>
 
-                    {/* Main Center Car */}
                     <img src={blueSuv}
                         className="h-[120%] max-h-[500px] w-auto max-w-full px-4 z-20 object-contain drop-shadow-2xl relative" />
 
-                    {/* Right Car Container */}
                     <div className="relative w-1/4 h-full hidden md:block">
                         <img src={whiteSuv} className="absolute left-0 h-full w-auto object-contain drop-shadow-xl" />
                         <div className="absolute inset-0 bg-gradient-to-l from-white via-white/80 to-transparent z-10 w-[120%] -left-[20%]"></div>
                     </div>
-                    
+
                 </div>
-                
-                {/* Details under car */}
+
                 <div className="mt-8 relative z-20">
                     <h3 className="text-xl font-bold text-[#2d2d2d] mb-2">Toyota bZ4X</h3>
                     <p className="text-gray-400 text-[13px] leading-relaxed max-w-sm mx-auto">
@@ -45,7 +40,6 @@ const NewCar = () => {
                     </p>
                 </div>
 
-                {/* Pagination Controls */}
                 <div className="flex items-center justify-center gap-6 mt-10">
 
                     <button className="w-10 h-10 bg-black text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition shadow-lg">
